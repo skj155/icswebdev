@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontendicg</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .color-strip {
+            width: 100%;
+            height: 60px;
+            background: linear-gradient(90deg, #b8dbe6, #316ea0, #064375);
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+        }
+
+        .logo {
+            height: 40px;
+            margin-right: 15px;
+        }
+
+        .text {
+            font-size: 20px;
+            font-weight: 600;
+            color: #ffffff;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .hide-desktop {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .hide-desktop {
+                display: block;
+            }
+
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background: rgba(0, 0, 0, 0.8);
+                width: 200px;
+                padding: 10px;
+            }
+        }
+    </style>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 60px;
+            background-color: linear-gradient(90deg,  #ffffff);
+            background: linear-gradient(90deg,#316ea0,#064375,#0d3865  );
+            
+        }
+        
+        
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #8bcbf8;
+            font-weight: bold;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        .right-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .consult-button {
+            background-color: #b1e6f5;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+    <div class="color-strip">
+        <img src="images/image.png" class="logo">
+        <span class="text">ICG-IITK</span>
+    </div>
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">AM</a>
+        <a href="#">Pages</a>
+        <a href="#">Blogs</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="right-section">
+        <span class="menu-icon">☰</span>
+        <button class="consult-button">Get Your Consult!</button>
+    </div>
+    </nav>
+    <section class="hero-section">
+        <h1>Institute Counselling Service</h1>
+        <p class="subheading">IIT Kanpur</p>
+        <p class="tagline ">Empowering You to Thrive – Academically, Personally, and Beyond!</p>
+
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .hero-section {
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                padding: 70px 20px;
+                background: linear-gradient(90deg, #690e97, #501bad, #310792);
+                color: white;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            .hero-section h1 {
+                font-size: 36px;
+                font-weight: 700;
+                margin-bottom: 0;
+            }
+
+            .subheading {
+                font-size: 20px;
+                font-weight: 500;
+                margin-top: 0;
+                margin-bottom: 10px;
+            }
+
+            .tagline {
+                font-size: 15px;
+                font-weight: 400;
+                max-width: 600px;
+                margin: 0 auto;
+                line-height: 1.5;
+            }
+        </style>
+        <div class="search-container">
+            <div class="search-wrapper">
+                <input type="text" class="search-input" placeholder="Search...">
+                <button class="search-btn">🔍</button>
+            </div>
+        </div>
+        <script>
+            document.querySelector(".search-btn").addEventListener("click", function () {
+                let query = document.querySelector(".search-input").value.trim().toLowerCase();
+                
+                
+                let subjectPages = {
+                    
+                    "mth 111": "mth111.html",
+                    "mth 112": "mth112.html",
+                    "mth 113": "mth113.html",
+                    "mth 114": "mth114.html",
+    
+                    
+                    "phy 111": "phy111.html",
+                    "phy 112": "phy112.html",
+                    "phy 113": "phy113.html",
+                    "phy 114": "phy114.html",
+                    "phy 115": "phy115.html",
+    
+                   
+                    "chm 111": "chm111.html",
+                    "chm 112": "chm112.html",
+                    "chm 113": "chm113.html",
+
+                    "elc 111": "elc.html",
+                    "elc 112": "elc.html",
+                    "elc 113": "elc.html",
+
+                    "esc 111": "esc111.html",
+                    "esc 112": "esc112.html",
+                    "esc 113": "esc113.html",
+                    "lif 111":"lif111.html",
+                    "ta 111" :"ta111.html",
+
+                };
+    
+                if (subjectPages[query]) {
+                    window.location.href = subjectPages[query]; // Redirect to the matching page
+                } else {
+                    alert("Subject not found! Try searching MTH, PHY, or CHM.");
+                }
+            });
+        </script>
+        </script>
+        <title>Search Bar</title>
+    <style>
+        
+        .search-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .search-wrapper {
+            display: flex;
+            align-items: center;
+            border: 2px solid #ffffff;
+            border-radius: 25px;
+            overflow: hidden;
+            background: #310792;
+        }
+
+        .search-input {
+            width: 250px;
+            padding: 10px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            background: transparent;
+            color: white;
+        }
+
+        .search-input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .search-btn {
+            padding: 10px 15px;
+            border: none;
+            background: #ffffff;
+            color: #310792;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .search-btn:hover {
+            background: #ddd;
+        }
+    </style>
+    
+        <script>
+            document.querySelector(".search-btn").addEventListener("click", function () {
+                let query = document.querySelector(".search-input").value.trim();
+                if (query) {
+                    alert("Searching for: " + query);
+                    
+                }
+            });
+        </script>
+
+        <style>
+            .search-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 10px;
+                
+            }
+
+            .search-wrapper {
+                position: relative;
+                display: flex;
+                align-items: center;
+                border: 2px solid #ffffff;
+                border-radius: 25px;
+                overflow: hidden;
+                background: transparent;
+            }
+
+            .search-input {
+                width: 220px;
+                padding: 10px;
+                border: none;
+                outline: none;
+                font-size: 16px;
+                background: transparent;
+                color: white;
+            }
+
+            .search-input::placeholder {
+                color: rgba(255, 255, 255, 0.7);
+            }
+
+            .search-btn {
+                padding: 10px 15px;
+                border: none;
+                background: #ffffff;
+                color: #310792;
+                cursor: pointer;
+                font-size: 16px;
+                transition: 0.3s;
+            }
+
+            .search-btn:hover {
+                background: #ddd;
+            }
+        </style>
+    </section>
+    <section>
+        <div class="big-card">
+            <div class="title-box">
+                <h2>MTH</h2>
+                <p>Bachoo, this might feel a bit tough. Take a deep breath and get started!</p>
+            </div>
+
+            <div class="subcards">
+                <div class="subcard">
+                    <a href="mth111.html" class="subcard">
+                    <h3>MTH 111</h3>
+                </a>
+                    <p>Explore the world of equations and structures.</p>
+                </div>
+                <div class="subcard">
+                    <a href="mth112.html" class="subcard">
+                    <h3>MTH 112</h3>
+                    </a>
+                    <p>Learn about vector calculus and its applications.</p>
+                </div>
+                <div class="subcard">
+                    <a href="mth113.html" class="subcard">
+                    <h3>MTH 113</h3>
+                    </a>
+                    <p>Understand matrices and determinants.</p>
+                </div>
+                <div class="subcard">
+                    <a href="mth114.html" class="subcard">
+                    <h3>MTH 114</h3>
+                    </a>
+                    <p>Dive into derivatives and integrals.</p>
+                </div>
+            </div>
+        </div>
+        <style>
+            .body {
+                font-family: 'Poppins', sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+
+                margin: 0;
+            }
+
+            .big-card {
+
+                width: 80%;
+                max-width: 800px;
+                background: url("images/mthbg4.avif") no-repeat center center/cover;
+
+                padding: 20px;
+                border-radius: 15px;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+                text-align: center;
+                color: white;
+                margin: 40px auto;
+            }
+
+
+
+            .big-card-title {
+                font-size: 28px;
+                font-weight: bold;
+                color: #ffffff;
+                /* Ensuring visibility */
+                margin-bottom: 15px;
+                text-align: center;
+                /* Centers text */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+            .subcards {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                /* Creates two columns */
+                gap: 15px;
+                /* Space between subcards */
+                justify-content: center;
+                align-items: center;
+            }
+
+
+            .subcard {
+                background: #6e9c9e;
+                color: rgb(6, 1, 1);
+                padding: 20px;
+                width: 100%;
+                height: 150px;
+                border-radius: 10px;
+                box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                transition: transform 0.3s ease-in-out;
+            }
+
+            .subcard:hover {
+                transform: translateY(-5px);
+            }
+
+            .title-box {
+                background: white;
+                color: black;
+                font-size: 24px;
+                font-weight: 800;
+                padding: 20px;
+                border-radius: 8px;
+                display: inline-block;
+                margin-bottom: 15px;
+                box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+                max-width: 600px;
+            }
+
+            .title-box p {
+                font-size: 14px;
+                font-weight: 500;
+                margin-top: 5px;
+            }
+
+            .subcard h3 {
+                margin-bottom: 5px;
+                font-size: 18px;
+            }
+
+            .subcard p {
+                font-size: 14px;
+            }
+
+            @media (max-width: 600px) {
+                .subcards {
+                    grid-template-columns: repeat(1, 1fr);
+                    /* Stack all on smaller screens */
+                }
+            }
+        </style>
+    </section>
+   
+    <section>
+        <div class="big-card2">
+            <div class="title-box2">
+                <h2>PHY</h2>
+                <p>"Physics isn't just about numbers—it’s about understanding how the world works, from falling apples
+                    to distant galaxies. Keep going, you’re uncovering the secrets of the universe!" 🚀</p>
+            </div>
+
+            <div class="subcards2">
+                <div class="subcard2">
+                    <a href="phy111.html" class="subcard2">
+                    <h3>PHY 111</h3>
+                    </a>
+                    <p>It's a practical time!</p>
+                </div>
+                <div class="subcard2">
+                    <a href="phy112.html" class="subcard2">
+                    <h3>PHY 112</h3>
+                    </a>
+                    <p>"It's all about classical mechanics describing motion, and Lagrangian mechanics adding elegance
+                        with energy principles."</p>
+                </div>
+                <div class="subcard2">
+                    <a href="phy113.html" class="subcard2">
+                    <h3>PHY 113</h3>
+                    </a>
+                    <p>"It's all about electrodynamics shaping forces and magnetism weaving the invisible threads of
+                        motion."</p>
+                </div>
+                <div class="subcard2">
+                    <a href="phy114.html" class="subcard2">
+                    <h3>PHY 114</h3>
+                    </a>
+                    <p>"It's all about quantum mechanics revealing the strange and fascinating rules of the tiny world."
+                    </p>
+                </div>
+                <div class="subcard2 last-card">
+                    <a href="phy115.html" class="subcard2">
+                    <h3>PHY 115</h3>
+                    </a>
+                    <p>"It's all about oscillations and waves shaping the rhythm of nature, from sound to light."</p>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            body {
+                text-align: center;
+                background: #f4f4f4;
+            }
+
+            .big-card2 {
+                width: 80%;
+                max-width: 800px;
+                background: url("images/phybg.jpg") no-repeat center center/cover;
+                padding: 30px;
+                border-radius: 15px;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+                text-align: center;
+                color: white;
+                margin: 50px auto;
+            }
+
+            .title-box2 {
+                background: white;
+                color: black;
+                font-size: 24px;
+                font-weight: 800;
+                padding: 20px;
+                border-radius: 8px;
+                display: inline-block;
+                margin-bottom: 15px;
+                box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+                max-width: 600px;
+            }
+
+            .title-box2 p {
+                font-size: 14px;
+                font-weight: 500;
+                margin-top: 5px;
+            }
+
+            .subcards2 {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+            }
+
+            .subcard2 {
+                background: #6e9c9e;
+                color: rgb(6, 1, 1);
+                padding: 25px;
+
+                height: 200px;
+
+                border-radius: 10px;
+                box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                transition: transform 0.3s ease-in-out;
+
+            }
+
+
+            .subcard2:hover {
+                transform: translateY(-5px);
+            }
+
+            .subcard2 h3 {
+                margin-bottom: 5px;
+                font-size: 18px;
+            }
+
+            .subcard2 p {
+                font-size: 14px;
+                padding: 5px;
+            }
+
+            /* Center last card */
+            .last-card {
+                grid-column: span 2;
+            }
+
+            @media (max-width: 600px) {
+                .subcards2 {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+
+                .last-card {
+                    grid-column: span 1;
+                }
+            }
+        </style>
+    </section>
+    <section>
+        <div class="big-card3">
+            <div class="title-box3">
+                <h2>CHM</h2>
+                <p>"Chemistry is like magic—you mix things up, and the world changes! Keep experimenting and discovering
+                    the secrets of matter!" 🔬✨</p>
+            </div>
+
+            <div class="subcards3">
+                <div class="subcard3">
+                    <a href="chm111.html" class="subcard3">
+                    <h3>CHM 111</h3>
+                </a>
+                    <p>It's a practical time!</p>
+                    
+                </div>
+                <div class="subcard3">
+                    <a href="chm112.html" class="subcard3">
+                    <h3>CHM 112</h3>
+                </a>
+                    <p>"Physical chemistry deciphers the dance of molecules, while quantum chemistry unlocks the secrets
+                        of the atomic realm!" 🔥⚛️✨</p>
+                    
+                </div>
+                <div class="subcard3 last-card">
+                    <a href="chm113.html" class="subcard3">
+                    <h3>CHM 113</h3>
+                </a>
+                    <p>"Coordinate chemistry unveils the art of metal-ligand bonding, while organic chemistry weaves the
+                        magic of carbon into life!" 🔬✨</p>
+                    
+                </div>
+
+            </div>
+        </div>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            body {
+                text-align: center;
+                background: #f4f4f4;
+            }
+
+            .big-card3 {
+                width: 80%;
+                max-width: 800px;
+                background: url("images/chmbg2.jpg") no-repeat center center/cover;
+                padding: 30px;
+                border-radius: 15px;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+                text-align: center;
+                color: white;
+                margin: 50px auto;
+            }
+
+            .title-box3 {
+                background: white;
+                color: black;
+                font-size: 24px;
+                font-weight: 800;
+                padding: 20px;
+                border-radius: 8px;
+                display: inline-block;
+                margin-bottom: 15px;
+                box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+                max-width: 600px;
+            }
+
+            .title-box3 p {
+                font-size: 14px;
+                font-weight: 500;
+                margin-top: 5px;
+            }
+
+            .subcards3 {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+            }
+
+            .subcard3 {
+                background:#6e9c9e;
+                color: rgb(6, 1, 1);
+                padding: 25px;
+
+                height: 200px;
+
+                border-radius: 10px;
+                box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                transition: transform 0.3s ease-in-out;
+
+            }
+
+
+            .subcard3:hover {
+                transform: translateY(-5px);
+            }
+
+            .subcard3 h3 {
+                margin-bottom: 5px;
+                font-size: 18px;
+            }
+
+            .subcard3 p {
+                font-size: 14px;
+                padding: 5px;
+            }
+
+            .last-card {
+                grid-column: span 2;
+                /* Takes full width */
+                justify-self: center;
+                /* Center in the grid */
+                width: 50%;
+                /* Adjust width to center properly */
+            }
+
+            /* Responsive Fix */
+            @media (max-width: 600px) {
+                .subcards3 {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+
+                .last-card {
+                    grid-column: span 1;
+                    /* Reset for small screens */
+                    width: 100%;
+                }
+            }
+
+            
+        </style>
+    </section>
+    <section>
+        <div class="big-card4">
+            <div class="title-box4">
+                <h2>ELC</h2>
+                <p>"Literature is the art of weaving words into worlds, emotions, and timeless stories." 📖✨</p>
+            </div>
+
+            <div class="subcards4">
+                <div class="subcard4">
+                    <a href="elc.html" class="subcard4">
+                    <h3>ELC 111</h3>
+                    </a>
+                    <p>"Enjoy speaking, learning, and growing—language is the key to connection and expression!" 🗣️✨
+                    </p>
+                </div>
+                <div class="subcard4">
+                    <a href="elc.html" class="subcard4">
+                    <h3>ELC 112</h3>
+                    </a>
+                    <p>"Embrace speaking, learning, and evolving—language is the bridge to deeper understanding and
+                        limitless expression."</p>
+                </div>
+                <div class="subcard2 last-card">
+                    <a href="elc.html" class="subcard4">
+                    <h3>ELC 113</h3>
+                    </a>
+                    <p>"Mastering language through speaking and learning unlocks deeper connections, nuanced expression,
+                        and endless intellectual growth."</p>
+                </div>
+
+            </div>
+        </div>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            body {
+                text-align: center;
+                background: #f4f4f4;
+            }
+
+            .big-card4 {
+                width: 80%;
+                max-width: 800px;
+                background: url("images/elcbg.jpg") no-repeat center center/cover;
+                padding: 30px;
+                border-radius: 15px;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+                text-align: center;
+                color: white;
+                margin: 50px auto;
+            }
+
+            .title-box4 {
+                background: white;
+                color: black;
+                font-size: 24px;
+                font-weight: 800;
+                padding: 20px;
+                border-radius: 8px;
+                display: inline-block;
+                margin-bottom: 15px;
+                box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+                max-width: 600px;
+            }
+
+            .title-box4 p {
+                font-size: 14px;
+                font-weight: 500;
+                margin-top: 5px;
+            }
+
+            .subcards4 {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+            }
+
+            .subcard4 {
+                background: #6e9c9e;
+                color: rgb(6, 1, 1);
+                padding: 25px;
+
+                height: 200px;
+
+                border-radius: 10px;
+                box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                transition: transform 0.3s ease-in-out;
+
+            }
+
+
+            .subcard4:hover {
+                transform: translateY(-5px);
+            }
+
+            .subcard4 h3 {
+                margin-bottom: 5px;
+                font-size: 18px;
+            }
+
+            .subcard4 p {
+                font-size: 14px;
+                padding: 5px;
+            }
+
+            .last-card {
+                grid-column: span 2;
+                /* Takes full width */
+                justify-self: center;
+                /* Center in the grid */
+                width: 50%;
+                /* Adjust width to center properly */
+            }
+
+            /* Responsive Fix */
+            @media (max-width: 600px) {
+                .subcards3 {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+
+                .last-card {
+                    grid-column: span 1;
+                    /* Reset for small screens */
+                    width: 100%;
+                }
+            }
+        </style>
+    </section>
+
+    <section>
+        <div class="big-card5">
+            <div class="title-box5">
+                <h2>ESC</h2>
+                <p>"Coding transforms ideas into reality, turning logic into innovation and creativity into limitless
+                    possibilities.Get started nerds" 💻🚀</p>
+            </div>
+
+            <div class="subcards5">
+                <div class="subcard5">
+                    <a href="esc111.html" class="subcard5">
+                    <h3>ESC 111</h3>
+                    </a>
+                    <p>Lets learn C language!</p>
+                </div>
+                <div class="subcard5">
+                    <a href="esc112.html" class="subcard5">
+                    <h3>ESC 112</h3>
+                    </a>
+                    <p>More advanced usage of C,be ready!</p>
+                </div>
+                <div class="subcard2 last-card">
+                    <a href="esc113.html" class="subcard5">
+                    <h3>ESC 113</h3>
+                    </a>
+                    <p>Lets learn MATLAB!</p>
+                </div>
+
+            </div>
+        </div>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            body {
+                text-align: center;
+                background: #f4f4f4;
+            }
+
+            .big-card5 {
+                width: 80%;
+                max-width: 800px;
+                background: url("images/escbg2.png") no-repeat center center/cover;
+                padding: 30px;
+                border-radius: 15px;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+                text-align: center;
+                color: white;
+                margin: 50px auto;
+            }
+
+            .title-box5 {
+                background: white;
+                color: black;
+                font-size: 24px;
+                font-weight: 800;
+                padding: 20px;
+                border-radius: 8px;
+                display: inline-block;
+                margin-bottom: 15px;
+                box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+                max-width: 600px;
+            }
+
+            .title-box5 p {
+                font-size: 14px;
+                font-weight: 500;
+                margin-top: 5px;
+            }
+
+            .subcards5 {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+            }
+
+            .subcard5 {
+                background: #6e9c9e;
+                color: rgb(6, 1, 1);
+                padding: 25px;
+
+                height: 200px;
+
+                border-radius: 10px;
+                box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                transition: transform 0.3s ease-in-out;
+
+            }
+
+
+            .subcard5:hover {
+                transform: translateY(-5px);
+            }
+
+            .subcard5 h3 {
+                margin-bottom: 5px;
+                font-size: 18px;
+            }
+
+            .subcard5 p {
+                font-size: 14px;
+                padding: 5px;
+            }
+
+            .last-card {
+                grid-column: span 2;
+                /* Takes full width */
+                justify-self: center;
+                /* Center in the grid */
+                width: 50%;
+                /* Adjust width to center properly */
+            }
+
+            /* Responsive Fix */
+            @media (max-width: 600px) {
+                .subcards5 {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+
+                .last-card {
+                    grid-column: span 1;
+                    /* Reset for small screens */
+                    width: 100%;
+                }
+            }
+        </style>
+    </section>
+
+    <section>
+        <div class="big-card6">
+            <div class="title-box6">
+                <h2>Biology and Techical Arts</h2>
+                <p></p>
+            </div>
+
+            <div class="subcards6">
+                <div class="subcard6">
+                    <a href="lif111.html" class="subcard6">
+                    <h3>LIF 111</h3>
+                    </a>
+                    <p>"Biology unravels the mysteries of life, from microscopic cells to vast ecosystems." 🧬🌿</p>
+                </div>
+                <div class="subcard6">
+                    <a href="ta111.html" class="subcard6">
+                    <h3>TA 111</h3>
+                    </a>
+                    <p>"Drawing turns imagination into reality, where every line brings ideas to life." 🎨✨Lets draw!!</p>
+                </div>
+
+
+            </div>
+        </div>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            body {
+                text-align: center;
+                background: #f4f4f4;
+            }
+
+            .big-card6 {
+                width: 80%;
+                max-width: 800px;
+                background: url("images/biobg.jpg") no-repeat center center/cover;
+                padding: 30px;
+                border-radius: 15px;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+                text-align: center;
+                color: white;
+                margin: 50px auto;
+            }
+
+            .title-box6 {
+                background: white;
+                color: black;
+                font-size: 24px;
+                font-weight: 800;
+                padding: 20px;
+                border-radius: 8px;
+                display: inline-block;
+                margin-bottom: 15px;
+                box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+                max-width: 600px;
+            }
+
+            .title-box6 p {
+                font-size: 14px;
+                font-weight: 500;
+                margin-top: 5px;
+            }
+
+            .subcards6 {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+            }
+
+            .subcard6 {
+                background:#6e9c9e;
+                color: rgb(6, 1, 1);
+                padding: 25px;
+
+                height: 200px;
+
+                border-radius: 10px;
+                box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                transition: transform 0.3s ease-in-out;
+
+            }
+
+
+            .subcard6:hover {
+                transform: translateY(-5px);
+            }
+
+            .subcard6 h3 {
+                margin-bottom: 5px;
+                font-size: 18px;
+            }
+
+            .subcard6 p {
+                font-size: 14px;
+                padding: 5px;
+            }
+        </style>
+    </section>
+
+</body>
+
+</html>
